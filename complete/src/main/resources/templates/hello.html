@@ -1,12 +1,10 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head> 
     <title>Getting Started: Serving Web Content</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <p>Get Greeting <a href="/greeting">here</a></p>
-	<br>
-    <p>Get Hello <a href="/hello">here</a></p>
+    <p th:text="'Hello Spring Boot MVC, ' + ${name} + '!'" />
 </body>
 </html>
